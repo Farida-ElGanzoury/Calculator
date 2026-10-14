@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffd6e8, #d6e6ff, #e0d6ff);
+    color: #c300ff;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calculator {
+    width: 320px;
+    padding: 20px;
+    background-color: #1c1c1e;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.equation {
+    min-height: 30px;
+    padding: 10px 10px 0;
+    text-align: right;
+    color: #8e8e93;
+    font-size: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.display {
+    min-height: 70px;
+    padding: 0 10px 20px;
+    text-align: right;
+    color: white;
+    font-size: 56px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.key {
+    height: 65px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333336;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    transition: filter 0.15s;
+}
+
+.key:hover {
+    filter: brightness(1.3);
+}
+
+.key:active {
+    filter: brightness(1.6);
+}
+
+.function {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.operator {
+    background-color: #33ff0a;
+}
+
+.operator.active {
+    background-color: white;
+    color: #33ff0a;
+}
+
+.zero {
+    grid-column: span 2;
+    border-radius: 35px;
+    text-align: left;
+    padding-left: 26px;
+}
